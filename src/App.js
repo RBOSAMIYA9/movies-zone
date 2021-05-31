@@ -8,8 +8,7 @@ import SearchPage from './components/SearchPage';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 

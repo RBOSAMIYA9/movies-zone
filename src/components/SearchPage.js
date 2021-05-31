@@ -32,6 +32,8 @@ function SearchPage({ searchQuery }) {
 
         console.log("encoded uri", encodeURI(searchQuery));
         searchMovies()
+        
+        // eslint-disable-next-line
     }, [searchQuery])
     return (
         <>

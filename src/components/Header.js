@@ -11,7 +11,7 @@ function Header({ setSearch, setSearchQuery }) {
         setSearch(true);
         setSearchQuery(data.movie)
     };
-    // console.log(errors);
+    console.log(errors);
     return (
         <>
             <div className="header-container">

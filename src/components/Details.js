@@ -52,6 +52,8 @@ function Details(props) {
     useEffect(() => {
         console.log("use effect");
         fetchData();
+        
+        // eslint-disable-next-line
     }, [props.match.params.id]);
     // console.log("match", match.url);
     return (
@@ -78,7 +80,7 @@ function Details(props) {
                                 </div>
                                 <h3>Overview</h3>
                                 <p className="overview">{movieDetails.overview}</p>
-                                <a href={movieDetails.homepage} target="_blank"><button className="btn-primary">View More</button></a>
+                                <a href={movieDetails.homepage} target="_blank" rel="noreferrer" ><button className="btn-primary">View More</button></a>
                             </div>
 
                         </div>
@@ -90,7 +92,7 @@ function Details(props) {
                                 sneakPeek.results.map((result) => (
                                     <>
                                         <div className="sneak-peek-video">
-                                            <a href={"http://www.youtube.com/watch?v=" + result.key} target="_blank"><img src={"https://img.youtube.com/vi/" + result.key + "/0.jpg"} alt="youtube thumbnail" /></a>
+                                            <a href={"http://www.youtube.com/watch?v=" + result.key}  rel="noreferrer" target="_blank"><img src={"https://img.youtube.com/vi/" + result.key + "/0.jpg"} alt="youtube thumbnail" /></a>
                                         </div>
                                     </>
                                 ))
