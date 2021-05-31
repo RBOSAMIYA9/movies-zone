@@ -40,6 +40,12 @@ body {
   align-items: center;
 }
 
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+}
+
 .menu-container input {
   margin-right: 0px;
   outline: none;
@@ -340,6 +346,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 30px;
 }
-article{
+
+article {
   background: white;
 }

@@ -1,6 +1,11 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 
+import {
+
+    Link
+
+} from "react-router-dom";
 
 function Header({ setSearch, setSearchQuery }) {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -15,11 +20,15 @@ function Header({ setSearch, setSearchQuery }) {
     return (
         <>
             <div className="header-container">
+
                 <div className="logo-container">
-                    <span className="logo">MOVIES</span>
+                    <Link to="/">
+                        <span className="logo">MOVIES</span>
+                    </Link>
                 </div>
                 <div className="menu-container">
-                    <div className="menu-item">Home</div>
+
+                    <Link to="/"><div className="menu-item">Home</div></Link>
                     {/* <div className="menu-item">Bookmarked</div> */}
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input type="text" className="menu-item" placeholder="enter movie name"  {...register("movie", {})} />
