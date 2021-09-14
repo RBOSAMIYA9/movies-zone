@@ -31,7 +31,7 @@ function Header({ setSearch, setSearchQuery }) {
                     <Link to="/"><div className="menu-item">Home</div></Link>
                     {/* <div className="menu-item">Bookmarked</div> */}
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <input type="text" className="menu-item" placeholder="enter movie name"  {...register("movie", {})} />
+                        <input type="text" className="menu-item" id="searchBar" required placeholder="enter movie name"  {...register("movie", {})} />
                         <button type="submit">Search</button>
                     </form>
                 </div>

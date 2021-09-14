@@ -44,21 +44,7 @@ function SearchPage({ searchQuery }) {
                         <Movie data={result} />
 
                     ))}
-                    {/* <article>
-                        hello
-                    </article>
-                    <article>
-                        hello
-                    </article>
-                    <article>
-                        hello
-                    </article>
-                    <article>
-                        hello
-                    </article>
-                    <article>
-                        hello
-                    </article> */}
+                   
                 </section>
             </div>
         </>

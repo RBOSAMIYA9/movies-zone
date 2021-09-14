@@ -46,6 +46,10 @@ body {
   color: white;
 }
 
+#searchBar {
+  color: black;
+}
+
 .menu-container input {
   margin-right: 0px;
   outline: none;
